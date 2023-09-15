@@ -6,7 +6,7 @@ node {
   // the agent we wish to choose
     label 'java-docker-worker'
     stage('build') {
-        def runme = 'main'  // define the var runme as top
+        def runme = 'top'  // define the var runme as top
         if ("${runme}" == 'top') {
             echo 'I only execute if runme is set to top'
         } else if ("${runme}" == 'main') {
